@@ -39,6 +39,10 @@ textarea{
   height: 80px;
   border-top: 1px solid white;;
 }
+.col-md-8{
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
 .hour {
   background-color: #ffffff;
