@@ -1,5 +1,5 @@
 
-
+var today = moment().format('LL');
 // Display current date onto scheduler
 $("#currentDay").text(today);
 
