@@ -12,7 +12,11 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
-
+/* adding current day */
+#currentDay {
+  font-weight: bold;
+  color:  #338adc;
+} 
 .jumbotron {
   text-align: center;
   background-color: transparent;

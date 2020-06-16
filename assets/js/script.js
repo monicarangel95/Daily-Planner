@@ -1,26 +1,7 @@
-$(document).ready(function () {
-    // Here we write a function to build and display current time
-    function getCurrentTime() {
-        var today = moment().format("MMMM Do YYYY, h:mm:ss a");
-        $("#currentDay").text(today);
-    }
-    getCurrentTime();
-    // function to compare hours
-    function compareHour() {
-        var hourCurrent = moment().format("H");
-        console.log(hourCurrent);
-        $(".description").each(function () {
-            var hourSlot = parseInt($(this).attr("id"));
-            if (hourSlot < hourNow) {
-                $(this).addClass("past");
-            } else if (hourSlot === hourCurrent) {
-                $(this).removeClass("past");
-                $(this).addClass("present");
-            } else {
-                $(this).removeClass("past");
-                $(this).removeClass("present");
-                $(this).addClass("future");
-            }
-        });
-    }
-    compareHour();
+// Global variables are set!
+var hours = ["09 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"];
+var today = moment().format('LL');
+var currentHour = moment().format('hA');
+
+// Display the current date onto scheduler
+$("#currentDay").text(today);
